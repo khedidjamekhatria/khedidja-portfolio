@@ -1,0 +1,55 @@
+﻿.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 بطبيعة الحال، 1 في الهاتف */
+    gap: 1.5rem;
+    direction: rtl;
+    padding-top: 2rem;
+}
+.skill-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: #fdf6ff;
+    padding: 1.2rem 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: background 0.3s ease;
+}
+
+    .skill-item:hover {
+        background-color: #f3e8ff;
+    }
+
+    .skill-item i {
+        font-size: 2rem;
+        color: var(--primary-color);
+        min-width: 40px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .skill-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+        color: var(--accent-color);
+    }
+
+    .skill-item p {
+        margin: 0;
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skill-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+        .skill-item i {
+            margin-bottom: 0.5rem;
+        }
+}

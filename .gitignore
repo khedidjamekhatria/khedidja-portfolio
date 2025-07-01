@@ -40,7 +40,7 @@ ScaffoldingReadMe.txt
 
 # Publish folder
 publish/
-wwwroot/
+
 
 # OS files
 .DS_Store

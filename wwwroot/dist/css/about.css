@@ -1,0 +1,107 @@
+﻿/* ==== General Modern Theme ==== */
+.about {
+    position: relative;
+    padding: 6rem 2rem;
+    overflow: hidden;
+    background: linear-gradient(160deg, #f4efff 0%, #ffffff 100%);
+    font-family: 'Segoe UI', 'Tajawal', sans-serif;
+}
+
+.angled-background {
+    position: absolute;
+    top: -40px;
+    left: -50px;
+    width: 150%;
+    height: 120%;
+    background: #f0e5ff;
+    transform: rotate(-3deg);
+    z-index: 0;
+    border-radius: 30px;
+}
+
+.about-content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: auto;
+    z-index: 1;
+}
+
+.about-text {
+    flex: 1;
+    color: #333;
+}
+
+    .about-text h2 {
+        font-size: 2.2rem;
+        color: var(--primary-color);
+        margin-bottom: 1.2rem;
+    }
+
+    .about-text p {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        margin-bottom: 1.2rem;
+    }
+
+    .about-text strong {
+        color: var(--primary-color);
+    }
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+    .about-image img {
+        width: 100%;
+        max-width: 320px;
+        border-radius: 1.5rem;
+    }
+        .about-image img:hover {
+            transform: scale(1.03); 
+        }
+
+
+/* ==== Animations ==== */
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1s ease-out 0.3s forwards;
+}
+
+.animate-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: scaleIn 1s ease-out 0.6s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 220px;
+    }
+}
