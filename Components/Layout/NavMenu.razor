@@ -1,0 +1,37 @@
+﻿@rendermode InteractiveServer
+<nav class="navbar">
+    <div class="container nav-content">
+        <div class="logo-with-name">
+            <img src="dist/images/logo.png" class="logo-img" alt="logo" />
+            <span class="brand-name">Khedidja</span>
+        </div>
+
+        <button class="menu-toggle" @onclick="ToggleMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-links @(isMenuOpen ? "show" : "")">
+            <li><a href="#home" @onclick="CloseMenu">الرئيسية</a></li>
+            <li><a href="#about" @onclick="CloseMenu">من أنا</a></li>
+            <li><a href="#skills" @onclick="CloseMenu">مهاراتي</a></li>
+            <li><a href="#projects" @onclick="CloseMenu">مشاريعي</a></li>
+            <li><a href="#contact" @onclick="CloseMenu">اتصل بي</a></li>
+        </ul>
+    </div>
+</nav>
+
+@code {
+    private bool isMenuOpen = false;
+
+    private void ToggleMenu()
+    {
+        isMenuOpen = !isMenuOpen;
+    }
+
+    private void CloseMenu()
+    {
+        isMenuOpen = false;
+    }
+}

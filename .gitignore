@@ -1,0 +1,50 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+out/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Visual Studio for Mac
+.idea/
+*.userprefs
+
+# Rider
+.idea/
+*.sln.iml
+
+# Others
+*.log
+*.tlog
+*.tmp
+*.bak
+
+# Dotnet watch
+**/Properties/launchSettings.json
+
+# Publish folder
+publish/
+wwwroot/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Runtime-generated
+Generated_Code/
